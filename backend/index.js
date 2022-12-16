@@ -6,6 +6,8 @@ import express from "express";
 // import body-parser - helps to parse the request and create the req.body object
 import bodyParser from "body-parser";
 
+//import https from "https";
+
 // import cors - provides Express middleware to enable CORS with various options, connect frontend
 import cors from "cors";
 
@@ -39,7 +41,13 @@ app.get('/', function(req, res){
 });
 
 // PORT
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8888;
+
+// https
+//   .createServer(app)
+//   .listen(PORT, ()=>{
+//     console.log('server is runing at port 8888')
+//   });
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

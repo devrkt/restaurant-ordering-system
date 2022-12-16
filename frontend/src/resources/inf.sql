@@ -1,4 +1,4 @@
--- database name: "db_restaurant"
+-- database name: "inf"
 
 CREATE TABLE food( 
     food_id INT(11) PRIMARY KEY AUTO_INCREMENT, 
